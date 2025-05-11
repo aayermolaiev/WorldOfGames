@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  scores-app:
+    build: .
+    container_name: MainScoresFlaskApp
+    ports:
+      - "8777:8777"
+    volumes:
+      - scores_file:/Scores.txt
+    environment:
+      - FLASK_APP=MainScoresFlaskApp
+
+volumes:
+  scores_file:
