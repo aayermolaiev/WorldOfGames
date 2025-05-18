@@ -11,4 +11,4 @@ EXPOSE 8777
 
 ENV FLASK_APP=MainScoresFlaskApp
 
-CMD ["python", "MainScores.py"]
+CMD ["python3", "MainScores.py"]
